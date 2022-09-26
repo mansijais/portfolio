@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My_Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class='main'>
+        <nav class='navBar'>
+            <h1>Mansi Jaiswal Portfolio</h1>
+            <div class='navigationMenu'>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect!</a>
+                <div>
+        </nav>
+        <section class='heroSection'>
+            <img class='profileImage' src='ME.jpeg' />
+            <div class='herosectionDetails'>
+                <h1>Mansi Jaiswal</h1>
+                <h3>Frontend Developer </h3>
+            </div>
+        </section>
+        <section class='aboutMe' id='aboutMe'>
+            <h1>More About me!!</h1>
+            <p>I am Mansi Jaiswal.I am pursuing B.Tech in Computer Science and currently i am in my final year of my
+                course.
+                Over the course of my college journey ,i have development some certification courses which is based on
+                web development
+                and C++ programming language.My technical skills includes html,css,Javascript,react,bootstrap,
+                nodejs,mongodb
+
+
+
+                .</p>
+        </section>
+        <section class='skillsAndProjects'>
+            <div class='skills' id='skills'>
+                <h1 class='cardHeading'>Skills</h1>
+                <img src="/images/html.svg " alt="" title="HTML">
+                <img src="/images/css.svg" alt="" title="CSS">
+                <img src="/images/js.svg" alt="" title="Javascript">
+                <img src="/images/node.svg" alt="" title="Node.JS">
+                <img src="/images/react.svg" alt="" title="React">
+                <img src="/images/mongo.svg" alt="" title="MongoDB">
+                <img src="/images/firebase.svg" alt="" title="firebase">
+                <img src="/images/redux.svg" alt="" title="Redux">
+            </div>
+            <div class='projects' id='projects'>
+                <h1 class='cardHeading'>Projects</h1>
+                <div class='projectContainer'>
+                    <img src='./images/tumblr-icon-1.svg' />
+                    <div class='projectDescription'>
+                        <h4>TASKY</h4>
+                        <p>Its a web app where you can Add daily to daily task and can edit and delete it.
+                      . <br>
+                            Technologies HTML,CSS,JAVASCRIPT AND BOOTSTRAP</p>
+                    </div>
+                </div>
+                <div class='projectContainer'>
+                    <img src='./images/food-network-3.svg' />
+                    <div class='projectDescription'>
+                        <h4>ZOMATO Clone</h4>
+                        <p>I tried too clone facebook forntend. <br>
+                            Technologies used-HTML,CSS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='contactForm' id='contactForm'>
+            <h1>Let's Connect!</h2>
+                <div class='formGroup'>
+                    <label for='name'>Enter Full Name</label><br />
+                    <input type='text' id='name' placeholder='Full Name' />
+                </div>
+                <div class='formGroup'>
+                    <label for='email'>Email</label><br />
+                    <input type='text' id='email' placeholder='Email' />
+                </div>
+                <div class='formGroup'>
+                    <label for='message'>Message</label><br />
+                    <textarea placeholder="Send some message!" id="message" name="w3review" rows="4"
+                        cols="50"></textarea>
+                </div>
+                <button class='submitButton' onClick={submit()}>Connect</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
